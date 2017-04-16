@@ -1,5 +1,4 @@
 body{
-  cursor: crosshair;
   margin: 0;
   padding: 0;
   color: #363636;
@@ -132,6 +131,8 @@ li:hover{
   width: 90%;
   height: 90%;
   padding: 20px;
+  padding-left: 50px;
+  overflow: auto;
 }
 
 #aboutpage{
@@ -140,6 +141,8 @@ li:hover{
   width: 90%;
   height: 90%;
   padding: 20px;
+  padding-left: 50px;
+  overflow: auto;
 }
 
 #logo{
@@ -165,4 +168,27 @@ li:hover{
   text-align: center;
   margin-bottom: 0px;
   cursor: pointer;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.question {
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: block;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active{
+    font-weight: bolder;
+    cursor: default;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.answer {
+    display: none;
 }

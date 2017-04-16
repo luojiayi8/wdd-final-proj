@@ -21,16 +21,23 @@ $(document).ready(function(){
       $("#guidepage").hide();
 	});
 
-  $("#hide").click(function(){
-    $("#dropdown").slideUp("swing");
-  });
-
   $('.item').hover(
 		function () {
         $(this).find('.overlay').show();},
     function () {
         $(this).find('.overlay').hide();}
   );
+
+  $('#hide').text("Hide");
+  $("#hide").click(function(){
+      $("#dropdown").slideUp("swing");
+    });
+
+  $('.question').click(function(){
+      $(this).addClass("active");
+      $(this).find('.answer').show();
+  });
+
 });
 
-// click, slidedown/slideup, show/hide, fadein, hover, find
+// click, slidedown/slideup, show/hide, fadein, hover, text, addclass
