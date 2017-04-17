@@ -170,11 +170,10 @@ li:hover{
   cursor: pointer;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
 .question {
     cursor: pointer;
     padding: 10px;
-    width: auto;
+    width: 50%;
     text-align: left;
     border: none;
     outline: none;
@@ -182,16 +181,21 @@ li:hover{
     display: block;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active{
     font-weight: bolder;
     cursor: default;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .answer {
     display: none;
     font-weight: 400;
     padding-left: 50px;
     color: gray;
+}
+
+.icon{
+  font-weight: bold;
+  font-size: 18px;
+  display: inline;
+  margin-right: 10px;
 }

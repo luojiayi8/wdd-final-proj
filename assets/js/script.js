@@ -28,15 +28,20 @@ $(document).ready(function(){
         $(this).find('.overlay').hide();}
   );
 
-  $('#hide').text("Hide");
   $("#hide").click(function(){
       $("#dropdown").slideUp("swing");
     });
 
   $('.question').click(function(){
       $(this).addClass("active");
-      $(this).find('.answer').show();
+      $(this).find('.answer').show("slow");
+      $(this).find('.icon').text("--");
   });
+
+/*  $('.question.active').click(function(){
+      $(this).find('.answer').hide();
+      $(this).removeClass("active");
+  }); */
 
 });
 
