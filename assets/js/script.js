@@ -32,16 +32,24 @@ $(document).ready(function(){
       $("#dropdown").slideUp("swing");
     });
 
-  $('.question').click(function(){
+/*  $('.question').click(function(){
       $(this).addClass("active");
       $(this).find('.answer').show("slow");
       $(this).find('.icon').text("--");
-  });
-
-/*  $('.question.active').click(function(){
-      $(this).find('.answer').hide();
-      $(this).removeClass("active");
   }); */
+
+  $('.question').click(function(){
+      if ( $(this).hasClass('active') ) {
+        $(this).find('.answer').hide("slow");
+        $(this).removeClass("active");
+        $(this).find('.icon').text("+");
+      }
+      else{
+        $(this).addClass("active");
+        $(this).find('.answer').show("slow");
+        $(this).find('.icon').text("--");
+      }
+  });
 
 });
 
