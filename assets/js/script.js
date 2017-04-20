@@ -17,20 +17,20 @@ $(document).ready(function(){
   $("li:first-child").click(function(){
       $("#dropdown").slideDown("swing");
       $("#aboutpage").fadeIn("slow");
-      $("#historypage").hide();
+      $("#menupage").hide();
       $("#guidepage").hide();
 	});
 
   $("li:nth-child(2)").click(function(){
 			$("#dropdown").slideDown("swing");
       $("#guidepage").fadeIn("slow");
-      $("#historypage").hide();
+      $("#menupage").hide();
       $("#aboutpage").hide();
 	});
 
   $("li:nth-child(3)").click(function(){
 			$("#dropdown").slideDown("swing");
-      $("#historypage").fadeIn("slow");
+      $("#menupage").fadeIn("slow");
       $("#aboutpage").hide();
       $("#guidepage").hide();
 	});

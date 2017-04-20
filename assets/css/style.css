@@ -147,7 +147,7 @@ li:hover{
   font-size: 12px;
 }
 
-#historypage{
+#menupage{
   display: none;
   position: relative;
   width: 90%;
@@ -222,4 +222,21 @@ li:hover{
   font-size: 20px;
   display: inline;
   margin-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    color: white;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+tr:hover{
+  background-color: #363636;
 }
