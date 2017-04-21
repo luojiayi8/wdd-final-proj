@@ -6,6 +6,7 @@ body{
 
 h1{
   text-align: center;
+  font-family: 'Merienda One', cursive;
 }
 
 #left{
@@ -99,6 +100,7 @@ li:hover{
   z-index: 100;
 /*  border: 2px gray solid; */
   border-top: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 #guidepage{
